@@ -2165,6 +2165,10 @@ input, select, textarea {
 
 /* Image */
 
+video.image {
+    object-fit: cover; /* Stellt sicher, dass das Video den Container ausfüllt */
+}
+
 	.image {
 		border: 0;
 		display: inline-block;
@@ -2173,6 +2177,13 @@ input, select, textarea {
 
 		.image img {
 			display: block;
+		}
+
+		.image video {
+			width: 100%;
+			height: auto;
+			display: block;
+			object-fit: cover;
 		}
 
 		.image.left, .image.right {
