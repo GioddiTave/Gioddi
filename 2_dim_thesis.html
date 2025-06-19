@@ -129,18 +129,18 @@
 											and reconstructions, the floor plans were straightened, and technical drawings 
 											were adjusted. The goal was to achieve a precise digital reconstruction 
 											without any drawing distortions</p>
-											<div class="row gtr-50 gtr-uniform">
+											<!-- <div class="row gtr-50 gtr-uniform">
 												<div class="col-4"><span class="image fit"><img src="./images/DIM/Thesis/TZ_3D_Anordnunng_4.PNG" alt="" /></span></div>
-											</div>
+											</div> -->
 										<h4>Reconstruction of Historical Architectural Details</h4>
 										<p>
 											In collaboration with the Archaeological Institute Freiburg, comparable structures were 
 											analyzed to reconstruct missing details. Historical technical drawings and 
 											photographs were re-examined to ensure accuracy.</p>
 
-											<div class="row gtr-50 gtr-uniform">
+										<!-- 	<div class="row gtr-50 gtr-uniform">
 												<div class="col-4"><span class="image fit"><img src="./images/DIM/Thesis/1.PNG" alt="" /></span></div>
-											</div>
+											</div> -->
 
 										<h4>Modeling Process</h4>
 										<p>
@@ -153,14 +153,14 @@
 
 
 
-											<div class="row gtr-50 gtr-uniform">
+											<!-- <div class="row gtr-50 gtr-uniform">
 											
 												<div class="col-4"><span class="image fit">
 													<video autoplay muted loop playsinline>
 														<source src="./images/DIM/Thesis/Twinmotion 2024-11-04 15-29-20(1)(1)(1).mp4" type="video/mp4">
 														Dein Browser unterstützt kein HTML5 Video.
 													</video></div>
-											</div>	
+											</div>	 -->
 
 											<h2>Mosaic Design and Texturing</h2>
 										<p>Using Substance Designer, textures were created to closely replicate 
@@ -172,10 +172,56 @@
 											simulates three-dimensional effects like light reflections and shadows 
 											using normal and height data – without requiring complex 3D models.</p>
 
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-9"><span class="image fit"><img src="./images/DIM/Thesis/Capture3.PNG" alt="" /></span></div>
-												<div class="col-2"><span class="image fit"><img src="./images/DIM/Thesis/Capture.PNG" alt="" /></span></div>
-											</div>
+											<style>
+												.circles-wrapper {
+												  display: flex;
+												  gap: 1rem;               /* Abstand */
+												  justify-content: center; /* zentriert */
+												}
+											  
+												.circle {
+												  /* Breite in rem oder % – Höhe wird automatisch gleich gemacht */
+												  width: 60rem;            
+												  aspect-ratio: 1 / 1;     
+												  border-radius: 50%;      
+												  overflow: hidden;        
+												  position: relative;      
+												}
+											  
+												.circle img {
+												  width: 100%;             
+												  height: 100%;            
+												  object-fit: cover;       
+												  /* Objekt-Position pro Kreis individuell setzen */
+												}
+											  
+												/* Erster Kreis */
+												.circle.first img {
+												  object-position: 0% 97%;
+												  transform: scale(1.3);
+												  transform-origin: left;
+												}
+												/* Zweiter Kreis */
+												.circle.second img {
+												  object-position: 80% 0%;
+												  transform: scale(1.3);
+												  transform-origin: top left; 
+												  
+												}
+											  </style>
+											  
+											  <div class="circles-wrapper">
+												<div class="circle first">
+												  <img src="./images/DIM/Thesis/2.PNG" alt="Erster Kreis" />
+												</div>
+												<div class="circle second">
+												  <img src="./images/DIM/Thesis/2.PNG" alt="Zweiter Kreis" />
+												</div>
+											  </div>
+											  
+											  
+
+										
 
 											 <h2>Unreal Engine</h2>
 										<p>Currently, an interactive application is being developed in Unreal Engine, 
@@ -184,13 +230,51 @@
 											Reality (VR). Additionally, an appropriate sound environment is planned to 
 											create an even more immersive experience.</p>
 
+
+											<style>
+											.learn-more-btn {
+												display: inline-flex;
+												flex-direction: column;
+												align-items: left;
+												padding: 3rem 4rem;     /* oben/unten 1.5rem, links/rechts 2rem */
+												font-size: 4rem;       /* größerer Text */
+												line-height: 1.4;         /* sorgt für gute Vertikal-Zentrierung */
+												
+												border: 1px solid #fff;
+												border-radius: 0.5rem;
+												background: transparent;
+												color: #fff;
+												text-transform: uppercase;
+												letter-spacing: 0.2rem;
+												font-weight: 600;
+												text-decoration: none;
+												/* transition: background 0.2s, color 0.2s; */
+												gap: 1rem;                /* mehr Abstand zwischen Text und Bild */
+												}
+
+												.learn-more-btn:hover {
+												background: #5D6281;
+												color: #fff !important;               
+												}
+
+												.learn-more-btn img {
+												display: block;
+												width: 120rem;             /* Bild ebenfalls vergrößern */
+												height: auto;
+												border-radius: 0.5rem;
+												}
+											  </style>
+											  
+																				
 											  <div class="row gtr-50 gtr-uniform">
-                                        
-												<div class="col-4"><span class="image fit"><img src="./images/DIM/Thesis/NewLevelSequence.0002.jpeg" alt="" /></span></div>
-											
-										</div>
-
-
+												<div class="col-13">
+												  <a href="https://github.com/GioddiTave/Koimesis-XR"
+													 class="learn-more-btn" target="_blank" rel="noopener">
+													to the Interactive Desktop Prototype
+													<img src="./images/DIM/Thesis/5.PNG" alt="Preview Interactive Desktop Prototype" />
+												  </a>
+												</div>
+											  </div>
 								</div>
 							</section>
 
